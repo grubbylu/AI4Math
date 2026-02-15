@@ -1,0 +1,139 @@
+id,problem,answer
+IMO081,"Find the number of rectangles that can be formed inside a fixed regular dodecagon ($12$-gon) where each side of the rectangle lies on either a side or a diagonal of the dodecagon. The diagram below shows three of those rectangles.
+[asy] unitsize(0.6 inch); for(int i=0; i<360; i+=30) { dot(dir(i), 4+black); draw(dir(i)--dir(i+30)); } draw(dir(120)--dir(330)); filldraw(dir(210)--dir(240)--dir(30)--dir(60)--cycle, mediumgray, linewidth(1.5)); draw((0,0.366)--(0.366,0), linewidth(1.5)); [/asy]",315
+IMO435,"A semi-circle of radius 8 cm, rocks back and forth along a line.  The distance between the line on which the semi-circle sits and the line above is 12 cm.  As it rocks without slipping, the semi-circle touches the line above at two points.  (When the semi-circle hits the line above, it immediately rocks back in the other direction.)  What is the distance between these two points, in millimetres, rounded off to the nearest whole number? [asy]
+
+draw((-15, -8)--(15, -8));draw((-15, 4)--(15, 4));draw((-8, 0)--(8, 0){down}..{up}(-8, 0));
+
+[/asy] (Note: After finding the exact value of the desired distance, you may find a calculator useful to round this value off to the nearest whole number.)",55
+IMO548,"For $x \ge 1,$ let $f$ be the function defined as follows:
+\[f(x) = \left\{
+\begin{array}{cl}
+\lfloor x \rfloor \left| x - \lfloor x \rfloor - \dfrac{1}{2 \lfloor x \rfloor} \right| & \text{if $x < \lfloor x \rfloor + \dfrac{1}{\lfloor x \rfloor}$}, \\
+f \left( x - \dfrac{1}{\lfloor x \rfloor} \right) & \text{otherwise}.
+\end{array}
+\right.\]Let $g(x) = 2^{x - 2007}.$ Compute the number of points in which the graphs of $f$ and $g$ intersect. Output absolute value of answer modulo $100000$.",22030
+IMO766,"Forty-eight congruent parallelograms with sides of length 62 feet and 20 feet are placed in a chevron pattern forming hexagon $ABCDEF$, as shown. What is the perimeter of hexagon $\allowbreak ABCDEF$?
+
+[asy]
+unitsize (0.1 cm);
+
+draw((16,-20)--(-3,-20)--(0,0)--(-3,20)--(16,20));
+draw((0,0)--(16,0));
+draw((5,20)--(8,0)--(5,-20));
+draw((13,20)--(16,0)--(13,-20));
+dot((18,0));
+dot((20,0));
+dot((22,0));
+draw((24,0)--(50,0));
+draw((23,20)--(47,20)--(50,0)--(47,-20)--(21,-20));
+draw((23,20)--(26,0)--(23,-20));
+draw((31,20)--(34,0)--(31,-20));
+draw((39,20)--(42,0)--(39,-20));
+draw((39,21)--(39,25));
+draw((47,21)--(47,25));
+draw((39,23)--(47,23));
+label(""$A$"",(-3,20),NW);
+label(""$B$"",(47,20),NE);
+label(""$C$"",(50,0),E);
+label(""$D$"",(47,-20),SE);
+label(""$E$"",(-3,-20),SW);
+label(""$F$"",(0,0),W);
+label(""20'"",(43,23),N);
+label(""62'"",(49,10),E);
+[/asy]",1208
+IMO819,"A ""slackrope walker"" is much like a tightrope walker except that the rope on which he performs is not pulled tight. Paul, a slackrope walker, has a rope tied to two $15\text{ m}$ high poles which are $14\text{ m}$ apart. When he is standing on the rope $5\text{ m}$ away from one of the poles, he is $3\text{ m}$ above the ground. How long in meters is the rope?
+
+[asy]
+draw((0,0)--(14,0)--(14,15)--(5,3)--(0,15)--cycle,black+linewidth(1));
+draw((0,3)--(5,3)--(5,0),black+linewidth(1)+dashed);
+draw((0,-3)--(6,-3),black+linewidth(1));
+draw((8,-3)--(14,-3),black+linewidth(1));
+draw((0,-3.5)--(0,-2.5),black+linewidth(1));
+draw((14,-3.5)--(14,-2.5),black+linewidth(1));
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle,black+linewidth(1));
+draw((14,0)--(14,1)--(13,1)--(13,0)--cycle,black+linewidth(1));
+draw(rotate(90)*Label(""Paul""),(5,3),3N);
+label(""5"",(0,3)--(5,3),N);
+label(""3"",(5,0)--(5,3),E);
+label(""14"",(7,-3));
+label(""15"",(14,0)--(14,15),E);
+[/asy]",28
+IMO1131,"How many ways are there to put five beads on a necklace if there are eight distinct beads to choose from, and rotations and reflections of the necklace are considered the same?",672
+IMO1477,"Captain Rusczyk tracked down a pirate who had stolen $2345_{6}$ dollars worth of goods from his ship. After winning an epic duel, the Captain demands that the pirate return $41324_{5}$ dollars. How much has the pirate gone in debt due to his two encounters with Rusczyk? Express your answer in base 10.",2145
+IMO1546,"Lines $m_{1}$, $m_{2}$, $l_{1}$ and $l_{2}$ are coplanar, and they are drawn such that $l_{1}$ is parallel to $l_{2}$, and $m_{2}$ is perpendicular to $l_{2}$. If the measure of angle 1 is 50 degrees, what is the measure in degrees of angle 2 in the figure below?
+
+[asy]
+draw((-6,0)--(3.5,0),Arrows);
+draw((-4,3)--(2,-1.5),Arrows);
+draw((3,3)--(-4.5,-4.5),Arrows);
+draw((-4,1)--(2,-3.5),Arrows);
+label(""1"",(1.5,0),N);
+label(""2"",(-2.7,0),N);
+label(""$m_{2}$"",(3,3),NE);
+label(""$m_{1}$"",(3.5,0),E);
+label(""$l_{1}$"",(2,-1.5),E);
+label(""$l_{2}$"",(2,-3.5),E);
+[/asy]",140
+86e8e5,"Let $n \geq 6$ be a positive integer. We call a positive integer $n$-Norwegian if it has three distinct positive divisors whose sum is equal to $n$. Let $f(n)$ denote the smallest $n$-Norwegian positive integer. Let $M=3^{2025!}$ and for a non-negative integer $c$ define 
+\begin{equation*}
+    g(c)=\frac{1}{2025!}\left\lfloor \frac{2025! f(M+c)}{M}\right\rfloor.
+\end{equation*}
+We can write 
+\begin{equation*}
+    g(0)+g(4M)+g(1848374)+g(10162574)+g(265710644)+g(44636594)=\frac{p}{q}
+\end{equation*}
+where $p$ and $q$ are coprime positive integers. What is the remainder when $p+q$ is divided by $99991$?",8687
+N00005,"Consider two points $A(-1, 1)$ and $B(1, -1)$ on the coordinate plane. Let $P$ be a point such that the absolute value of the $x$-coordinate of $P$ is less than or equal to 1. Find the area of the domain of points $P$ satisfying the following conditions:
+
+(i) There exists a parabola with the absolute value of the $x$-coordinate of the vertex greater than or equal to 1 that passes through points $A$, $P$, and $B$.
+
+(ii) The points $A$, $P$, and $B$ are collinear.",0
+N00016,An inscribed and circumscribed $n$-gon is divided by a line into two inscribed and circumscribed polygons with different numbers of sides. Find $n$.,3
+N00017,"Let \(a\), \(b\), and \(c\) be distinct complex numbers such that \(a + b + c \neq 0\). Compute the greatest possible number of unordered pairs of different polynomials in the set
+\[
+\left\{ ax^2 + bx + c, ax^2 + cx + b, bx^2 + cx + a, bx^2 + ax + c, cx^2 + ax + b, cx^2 + bx + a \right\}
+\]
+that have at least one common root.",7
+N00018,A positive integer \( n \) is added to the numerator and denominator of \( S(2) \) such that the value of the resulting fraction is \( \frac{1}{2} \). Compute \( n \).,1
+N00158,"Find the least positive number \( m \) such that for any polynomial \( f(x) \) with real coefficients, there exists a polynomial \( g(x) \) with real coefficients (degree not greater than \( m \)) such that there are 2017 distinct numbers \( a_1, a_2, \ldots, a_{2017} \) satisfying \( g(a_i) = f(a_{i+1}) \) for \( i = 1, 2, \ldots, 2017 \) (with indices taken modulo 2017).",2
+N00197,"Let $f(x, y) = \frac{x}{y} + \frac{y}{x}$ and $g(x, y) = \frac{x}{y} - \frac{y}{x}$. Then, if $\underbrace{f(f(... f(f(}_{2021 \text{ fs}} f(f(1, 2), g(2,1)), 2), 2)... , 2), 2)$ can be expressed in the form $a + \frac{b}{c}$, where $a$, $b$, $c$ are nonnegative integers such that $b < c$ and $\gcd(b,c) = 1$, find $a + b + \lceil \log_2 (\log_2 c) \rceil$.",2029
+N00239,"Manzi has $n$ stamps and an album with $10$ pages. He distributes the $n$ stamps in the album such that each page has a distinct number of stamps. He finds that, no matter how he does this, there is always a set of $4$ pages such that the total number of stamps in these $4$ pages is at least $\frac{n}{2}$. Determine the maximum possible value of $n$.",140
+N00267,"In a game where Bob hides in one of the vertices of an octahedron and Alice checks $n$ vertices per step, find the minimal possible value of $n$ for which Alice has a winning strategy.",4
+N00269,"Given a number pattern, a downward triangle of three numbers \(A\), \(B\), and \(C\) is taken such that \(A\) and \(B\) are two successive numbers in the \(i\)th row and \(C\) is in the \((i+1)\)th row just below \(A\) and \(B\). If \(A + B + C = 2093\), find the value of \(C\).",733
+N00409,"A family wears clothes of three colors: red, blue, and green, with a separate, identical laundry bin for each color. Each week, the family generates a total of 10 kg of laundry, with the proportion of each color varying. The laundry is sorted by color and placed in the bins. Next, the heaviest bin (only one of them, if there are several that are heaviest) is emptied and its contents washed. What is the minimal possible storing capacity required of the laundry bins in order for them never to overflow?",25
+N00490,"Let \( f: X \rightarrow X \), where \( X = \{1, 2, \ldots, 100\} \), be a function satisfying:
+1) \( f(x) \neq x \) for all \( x = 1, 2, \ldots, 100 \);
+2) for any subset \( A \) of \( X \) such that \( |A| = 40 \), we have \( A \cap f(A) \neq \emptyset \).
+
+Find the minimum \( k \) such that for any such function \( f \), there exists a subset \( B \) of \( X \) where \( |B| = k \), such that \( B \cup f(B) = X \).",69
+N00559,Consider a $2003$-gon inscribed in a circle and a triangulation of it with diagonals intersecting only at vertices. What is the smallest possible number of obtuse triangles in the triangulation?,1999
+N00787,"There is a test among the students in each of \( n \) papers (\( n \leq 3 \)). It is known that for any paper exactly three students got the best score, and in any two papers exactly one student got the best score in both papers. Find the smallest \( n \) such that the above conditions imply that exactly one student got the best score in all the subjects.",8
+N00806,"Some cells of a $10 \times 10$ grid are colored blue. A set of six cells is called [i]gremista[/i] if the cells are the intersection of three rows and two columns, or two rows and three columns, and are all painted blue. Determine the greatest value of $n$ for which it is possible to color $n$ cells blue such that there is no [i]gremista[/i] set.",46
+N00906,"A square box of chocolates is divided into \(49\) equal square cells, each containing either dark or white chocolate. At each move, Alex eats two chocolates of the same kind if they are in adjacent cells (sharing a side or a vertex). What is the maximal number of chocolates Alex can eat regardless of the distribution of chocolates in the box?",32
+N01223,"In a $3 \times 4$ grid, starting from the top-left corner and moving exactly 7 times, how many different ways can you reach the bottom-right corner if you can move up, down, and right?",35
+N01236,Suppose that all whole numbers are consecutively written down from left to right. Find the 206788th digit in this infinite sequence.,7
+N01418,"In a set of 7 numbers, the average is 10, the median is 12, and the unique mode is 3. Find the largest possible value for a term in this set.",25
+N01434,"Determine the lowest value of $M$ for a mega knight where $M = ATK + HP + SPD$ such that the mega knight will always defeat a normal knight. The normal knight has attributes $ATK$, $HP$, and $SPD$ that sum to 100, and all attributes are natural numbers with $HP \geq 1$.",133
+N01445,"A neighborhood is mapped as a right-angled triangle divided into smaller right-angled triangular blocks by streets. Jim wants to drive from the top endpoint to the rightmost endpoint. He can only go down (vertically), right (horizontally), or down by the hypotenuse of a block. How many different routes can Jim choose?",90
+N01455,"How many ordered integer pairs \((a, b)\) satisfy the equation \(2 \gcd(a, b) + 3 \text{lcm}(a, b) = ab\)?",3
+N01476,"In an attempt to cure Ganna, the troll king Grampapà has 2^128 - 1 magic potions, each made by combining some of his 128 ingredients. Some potions are beneficial and others are harmful, except for the one made with all the ingredients, which is both beneficial and harmful. Combining two beneficial potions produces a beneficial potion, and combining two harmful potions produces a harmful potion. Additionally, if a potion is beneficial, the potion formed from all the ingredients not included in it is harmful, and vice versa. Grampapà doesn't know which potions are beneficial and which are harmful, but he can find out the effect of a potion by distilling it. He wants to find out exactly which potions are beneficial and which are harmful, distilling as few potions as possible. How many potions must he distill to determine the nature of all potions?",8
+N01479,"In how many ways can two subsets \( A \) and \( B \) be chosen from the set \( S = \{1, 2, 3, 4, 5\} \) such that neither \( A \) is a subset of \( B \) nor \( B \) is a subset of \( A \)?",285
+N01509,"For certain quadrilaterals in the plane, what is the maximum number of its four midpoints (from each of its four sides) that can lie on the same line?",2
+N01525,What is the greatest number of balls of radius $1/2$ that can be placed within a rectangular box of size $10 \times 10 \times 1$?,106
+N01545,"Arman drew 4 horizontal and 4 vertical straight lines, forming several rectangles. Among these, four ""corner"" rectangles are labeled $A$, $B$, $C$, and $D$. The areas of rectangles $A$, $D$, and $C$ are $4$ cm$^2$, $14$ cm$^2$, and $7$ cm$^2$ respectively. Find the area of rectangle $B$.",2
+N01721,"Let ""BB"" be a positive integer that cannot be written as a positive perfect square. The first ""BB"" numbers are 1, 2, 4. Find the 2015th ""BB"" number.",8050
+N02003,"In the quadratic equation $ax^2 + bx + c = 0$, find the least integer value of the discriminant $D = b^2 - 4ac$ such that $D > 80$ and the equation has irrational solutions.",84
+BYTE17,"Let \(m\) be the maximal positive integer such that there exists complex numbers \(r_1,\cdots,r_{645}\), which are not all zeros, satisfying \(\prod_{k = 1}^{645}(r_k + 1)=\prod_{k = 1}^{645}(r_k^2+1)=\cdots=\prod_{k = 1}^{645}(r_k^m + 1)=1\). Find \(m \mod 848\).",46
+BYTE64,"Let \(P(x),Q(x)\) be distinct 4046-degree real polynomials with non-zero coefficients. Let \(r\) be the number of their common real roots (multiplicity counted) and \(s\) be the number of their common terms. Find the maximum possible value of \(r + s\).",6068
+BYTE66,"There are 100 observers inside a finite circular playground (the positions of any two observers are different). Each observer has a viewing angle of \(100^{\circ}\) and can observe all the other observers within its viewing angle range (including those on the two sides of the angle) inside the playground. (Each observer is regarded as a point, and these 100 observers are in the same plane.) For \(i = 1, 2,\cdots,100\), let \(a_i\) be the number of all the observers other than itself that the \(i\)-th observer can observe. Find the maximum value of \(\sum_{i = 1}^{100}a_i\).",8700
+BYTE70,"Let \(G\) be a 160-order simple graph. For any vertex \(u\), there exists another vertex \(v\), such that \(u\) and \(v\) are adjacent, and there exists no vertices adjacent to both \(u\) and \(v\). Find the maximal number of edges in \(G\).",10320
+BYTE92,"In an \(n\times n\) (\(n\in\mathbb{N}^*, n\geq2\)) chessboard, each unit square is filled with the number \(0\). In each operation, two unit squares with a common side are selected, and the numbers in them are both increased by \(1\). If it is possible, through several (more than \(0\) times) operations, to make the sum of the numbers in each row and each column be the same value, then the minimum number of operations is denoted as \(f(n)\); if there is no such operation, then \(f(n) = 0\). Find \(\sum_{i = 2}^{2025}f(i)\). Output answer modulo 100000.",77492
+N02414,"In a $11 \times 11$ square grid, the grid is divided into 5 rectangles along unit squares. How many ways can this be done such that one of the rectangles does not have an edge on the boundary of the grid? Note that rotations and reflections of the same division are counted as different ways.",32400
+N02457,A building is in the shape of a hemisphere with a radius of 20 ft. A 24 ft. board is leaning against the building such that the base of the board is on the ground and the center of the base of the board is 5 ft. from the edge of the building. Find the distance from the center of the base of the board to the point where the board is touching the building.,15
+N02533,"Find the largest positive integer $n$ such that there exists $n$ points on the surface of a cube, not all on the same face, which form the vertices of a regular plane $n$-gon.",12
+N02560,How many different roots does the equation $x^3 - x^2 - x - 1 = 0$ have?,1
+N03954,"Find the least real number $C$ such that if an infinite sequence of positive real numbers $l_1, l_2, \dots$ satisfies $\sum l_i^2 > C$, then the unit square can be covered with axis-aligned squares of lengths $l_1, l_2, \dots$.",3
+N03976,"There are 100 positive integers written on a board. At each step, Alex composes 50 fractions using each number exactly once, reduces these fractions to their irreducible form, and then replaces the 100 numbers on the board with the new numerators and denominators to create 100 new numbers. Find the smallest positive integer $n$ such that regardless of the initial values, after $n$ steps Alex can arrange to have only pairwise coprime numbers on the board.",99
+N04506,"How many ways are there to color each ring in the Olympic logo with the colors blue, yellow, black, green, or red such that no two intersecting rings are the same color?",1280
+N24737,"Given a polynomial with integer coefficients and distinct whole number roots, where the absolute value of each coefficient is less than or equal to 900, and it is the polynomial of the highest possible degree, what is the sum of the absolute values of its coefficients?",720
