@@ -1,0 +1,6 @@
+id,question,answer
+test_01,"A positive integer is called ""n-special"" if it has exactly two distinct positive divisors whose sum equals n. Let g(n) denote the smallest n-special positive integer. For example, g(5) = 6 because 6 has divisors 1, 2, 3, 6 and 2 + 3 = 5, and no smaller positive integer has two distinct divisors summing to 5. Compute g(100) + g(200) + g(500). Find the answer modulo 10^5.",10412
+test_02,"Let d(n) denote the number of positive divisors of n. Define S(N) = sum_{k=1}^{N} d(k^2). Compute S(10^6) mod 10^5.",17519
+test_03,"For a positive integer n, let sigma(n) denote the sum of all positive divisors of n. Define f(n) = floor(sigma(n)/n). Compute the sum of all positive integers n <= 10^6 such that f(n) = 3. Find the answer modulo 10^5.",71345
+test_04,"Let p_1 = 2, p_2 = 3, p_3 = 5, ... denote the prime numbers in increasing order. Define M = p_1 * p_2 * ... * p_20 (the product of the first 20 primes). How many ordered pairs (a, b) of positive integers satisfy a * b = M and gcd(a, b) = 1? Find the answer modulo 10^5.",48576
+test_05,"A positive integer n is called ""k-abundant"" if the sum of its proper divisors (all divisors except n itself) is at least k * n. Find the smallest 2-abundant number. That is, find the smallest positive integer n such that sigma(n) - n >= 2n, where sigma(n) is the sum of all divisors of n.",120
